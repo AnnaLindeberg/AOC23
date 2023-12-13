@@ -47,3 +47,7 @@ OK this took some time. Or, task1 was straightforward, walking through the loop 
 ## Day 11: Cosmic Expansion
 
 I figured things would just get large in part 2, and indeed that was what happened. Thus the approach of counting "normal" steps in x resp y-direction separately from steps over vast space (empty rows and columns, whose indices were parsed into separate sets) for part 1 meant part 2 was written with only two extra rows. Possibly my quickest solution to part 2 after part 1 ever?
+
+## Day 12: Hot Springs
+
+Hm some bug still, so no starts yet.
