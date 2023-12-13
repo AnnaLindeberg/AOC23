@@ -51,3 +51,7 @@ I figured things would just get large in part 2, and indeed that was what happen
 ## Day 12: Hot Springs
 
 Hm some bug still, so no starts yet.
+
+## Day 13: Point of Incidence
+
+Had to actually finish another before trying day 12 again – day 13 was manageable. First I somehow made it much more complicated than it needed to be – I think I assumed that the input grids would be much, much larger (not just many grids), so after I singled out pairs of indices (i,j) of rows (or columns) that are equal I tried to infer what symmetry axis was valid from that – turned out to be tricky to actually figure out *how* though. Got it to work on the example, but something was repeatedly off with the real input. To get it to work I  instead generated what pairs of indices where needed for a fold between two indices (iterating over all possible lines of symmetry), checking if all those were present in the set of equal-row-pairs (resp. equal-column-pairs). That was easy to write and worked fine – instant runtime, even with an added almost-equal-check required by part 2.
