@@ -4,11 +4,13 @@ def parseRow(row):
     return hotSprings, broken
 
 def countConfigs(hotSpringMap, brokenSeq):
-    L = [(hotSpringMap, brokenSeq)]
+    L = [(0, 0)]
     count = 0
     while len(L) > 0:
         newL = []
-        for smallMap, seq in L:
+        for smallMapIdx, seqIdx in L:
+            smallMap = hotSpringMap[smallMapIdx:]
+            seq = brokenSeq[seqIdx:]
             if len(seq) == 0 and '#' not in smallMap:
                 count += 1
                 continue
@@ -19,30 +21,33 @@ def countConfigs(hotSpringMap, brokenSeq):
             firstNum = seq[0]
 
             if firstChar == '.':
-                newL.append((smallMap[1:], seq))
+                newL.append((smallMapIdx + 1, seqIdx))
             elif firstChar == '#':
                 if (len(smallMap) == firstNum or (len(smallMap) > firstNum and smallMap[firstNum] in ['.','?'])) and '.' not in smallMap[:firstNum]:
-                    newL.append((smallMap[firstNum+1:], seq[1:]))
+                    newL.append((smallMapIdx + firstNum + 1, seqIdx + 1))
                 else:
                     continue
             elif firstChar == '?':
                 if (len(smallMap) == firstNum or (len(smallMap) > firstNum and smallMap[firstNum] in ['.','?'])) and '.' not in smallMap[:firstNum]:
-                    newL.append((smallMap[firstNum+1:], seq[1:]))
-                newL.append((smallMap[1:], seq))
+                    newL.append((smallMapIdx + firstNum + 1, seqIdx + 1))
+                newL.append((smallMapIdx + 1, seqIdx))
         L = newL
     return count
             
 
 def main():
-    totCount = 0
+    ans1tot = 0
+    ans2tot = 0
     with open("input12.txt") as file:
         for row in file:
             hotSprings, broken = parseRow(row)
-            c = countConfigs(hotSprings, broken)
+            c1 = countConfigs(hotSprings, broken)
+            c2 = countConfigs('?'.join([hotSprings]*5), broken*5)
             # print(hotSprings, broken, c)
-            totCount += c
+            ans1tot += c1
+            ans2tot += c2
 
-    print(f"Task 1: {totCount}\nTask 2: {0}")
+    print(f"Task 1: {ans1tot}\nTask 2: {ans2tot}")
 
 
 if __name__ == '__main__':
