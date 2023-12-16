@@ -64,6 +64,8 @@ Made a clever ("clever") solution on part 1 where I didn't actually move any sto
 
 ## Day 15: Lens Library
 
+This was very easy to be day 15?? Possible well-suited for python, but really just parsing text into code and nothing else.
+
 ## Day 16 : The Floor Will Be Lava
 
 Well it sounded straightforward with part 1, and it was by just using a queue and a sort of BFS. Thought it would be harder in part 2 (moving around mirrors?) but I could brute-force it by testing all possible starting positions and the runtime was still only a couple of seconds (didn't even have time to think of interrupting it). Still at it, in other words! I usually give up around here each year...
