@@ -63,3 +63,7 @@ Had to actually finish another before trying day 12 again – day 13 was managea
 Made a clever ("clever") solution on part 1 where I didn't actually move any stones, just computed the load from the initial configuration directly. Unfortunately, I *had* to move stones on the second part either way, so that was a bit all-for-nothing. For the second part I falsely assumed the loop would start at the initial configuration, though, and didn't get it to work for quite some time. Oh well, realized the mistake just before falling asleep and got the solution after 2 minutes this morning. Should clean up the code for this one –– I'll probably never though that...
 
 ## Day 15: Lens Library
+
+## Day 16 : The Floor Will Be Lava
+
+Well it sounded straightforward with part 1, and it was by just using a queue and a sort of BFS. Thought it would be harder in part 2 (moving around mirrors?) but I could brute-force it by testing all possible starting positions and the runtime was still only a couple of seconds (didn't even have time to think of interrupting it). Still at it, in other words! I usually give up around here each year...
