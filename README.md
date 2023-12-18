@@ -69,3 +69,7 @@ This was very easy to be day 15?? Possible well-suited for python, but really ju
 ## Day 16 : The Floor Will Be Lava
 
 Well it sounded straightforward with part 1, and it was by just using a queue and a sort of BFS. Thought it would be harder in part 2 (moving around mirrors?) but I could brute-force it by testing all possible starting positions and the runtime was still only a couple of seconds (didn't even have time to think of interrupting it). Still at it, in other words! I usually give up around here each year...
+
+## Day 17: Clumsy Crucible
+
+Aaah okay a modified Dijkstras (or not really, I guess it's really a question on how you generate the graph?) works on the small input, but my implementation is too slow to run on the full thing. If I get the time and urge, I'll test building a networkX-graph from the grid and use their shortest-path algorithm instead.
