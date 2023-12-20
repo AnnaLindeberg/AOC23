@@ -72,4 +72,6 @@ Well it sounded straightforward with part 1, and it was by just using a queue an
 
 ## Day 17: Clumsy Crucible
 
-Aaah okay a modified Dijkstras (or not really, I guess it's really a question on how you generate the graph?) works on the small input, but my implementation is too slow to run on the full thing. If I get the time and urge, I'll test building a networkX-graph from the grid and use their shortest-path algorithm instead.
+Aaah okay a modified Dijkstras (or not really, I guess it's really a question on how you generate the graph?) works on the small input, but my implementation is too slow to run on the full thing. If I get the time and urge, I'll test building a networkX-graph from the grid and use their shortest-path algorithm instead. Also: I should really, really start using numpy-arrays instead of tuples for coordinates, so that I stop doing ad-hoc addition of vectors etc.
+
+## Day 18: Lavaduct Lagoon
