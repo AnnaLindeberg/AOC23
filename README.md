@@ -75,3 +75,9 @@ Well it sounded straightforward with part 1, and it was by just using a queue an
 Aaah okay a modified Dijkstras (or not really, I guess it's really a question on how you generate the graph?) works on the small input, but my implementation is too slow to run on the full thing. If I get the time and urge, I'll test building a networkX-graph from the grid and use their shortest-path algorithm instead. Also: I should really, really start using numpy-arrays instead of tuples for coordinates, so that I stop doing ad-hoc addition of vectors etc.
 
 ## Day 18: Lavaduct Lagoon
+
+I did part 1 of this quite similarly as the loop-counting on day 10 (with the pipes), in essence reading left-to-right. Kept track of what points where interior on the row before to keep track of passing over bends though, as this couldn't be figured out from the #-symbols though. For part 2 I realized that I needed to use my initial idea of counting sub-areas while reading the input. In essence, it would be counting area horizontally only, storing down/up steps in a stack. There's some details missing right now, but it is a fun little problem so I might come back to it later!
+
+## Day 21: Step Counter
+
+Took a break for a couple of days, and wrote the solution for part 1 very quickly and brute-force-ish. Don't really know how part 2 would be solved...
