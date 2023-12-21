@@ -81,3 +81,7 @@ I did part 1 of this quite similarly as the loop-counting on day 10 (with the pi
 ## Day 21: Step Counter
 
 Took a break for a couple of days, and wrote the solution for part 1 very quickly and brute-force-ish. Don't really know how part 2 would be solved...
+
+## Day 19: Aplenty
+
+Ah! Hah! Wrote part 1 by constructing a function for each given workflow and then applying them in order. Always like solutions where a function returns a function. For part 2 I kept track of ranges of allowed values, and wrote a lot of code basically on a hunch that, to my big big surprised, worked on the very first try?! It's hard to read and (as everything else this year) without comments so perhaps not something to be really proud of but Still.
