@@ -87,3 +87,5 @@ Took a break for a couple of days, and wrote the solution for part 1 very quickl
 Ah! Hah! Wrote part 1 by constructing a function for each given workflow and then applying them in order. Always like solutions where a function returns a function. For part 2 I kept track of ranges of allowed values, and wrote a lot of code basically on a hunch that, to my big big surprised, worked on the very first try?! It's hard to read and (as everything else this year) without comments so perhaps not something to be really proud of but Still.
 
 ## Day 20: Pulse Propagation
+
+This was fun and a bit tricky! I made the different modules into different namedtuples, in the hope that this bare-bones type of class would make it easy to test the "state" of the whole system easily – and that was true. But I guess it makes the code slightly less readable than if they where proper classes. Anyhow, have not solved part 2. Probably won't?
