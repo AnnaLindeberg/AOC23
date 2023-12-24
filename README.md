@@ -89,3 +89,7 @@ Ah! Hah! Wrote part 1 by constructing a function for each given workflow and the
 ## Day 20: Pulse Propagation
 
 This was fun and a bit tricky! I made the different modules into different namedtuples, in the hope that this bare-bones type of class would make it easy to test the "state" of the whole system easily – and that was true. But I guess it makes the code slightly less readable than if they where proper classes. Anyhow, have not solved part 2. Probably won't?
+
+## Day 24: Never Tell Me The Odds
+
+A little linear algebra for part 1. Probably the same for part 2, but I wouldn't know.
