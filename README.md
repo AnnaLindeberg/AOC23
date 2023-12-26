@@ -93,3 +93,7 @@ This was fun and a bit tricky! I made the different modules into different named
 ## Day 24: Never Tell Me The Odds
 
 A little linear algebra for part 1. Probably the same for part 2, but I wouldn't know.
+
+## Day 22: Sand Slabs
+
+Came back to this because I failed on a tetris-like problem last year – maybe I could manage this year?! Turns out it ended up being a graph problem in the end any way :) Annoyingly, I still have a bug in part 2, even though my method seems to be rather solid (judged by eyeing through a couple of posts in the day's solution thread on reddit). The code works on the given input and any graph I can bother myself with coming up with. Aaaaaaaaah. I give up now.
