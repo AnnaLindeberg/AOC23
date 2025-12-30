@@ -104,3 +104,6 @@ AOC 2025 came to an end, but I'm still off work and want to solve problems!
 ## Day 17: Clumsy Crucible
 
 Revisited this shortest path problem with networkx and hacked together how to generate a suitable graph (rather than adapting Dijkstras). Turned out that I solved part 2 in part 1: only added an argument and the exact same code worked well!
+
+## Day 23: A Long Walk
+OK this one it looks like I didn't even try the first time around. I solved part 1 with no libraries, trying out `dataclasses` (which are nice!), but for the second one (solving an NP-hard longest path problem) I can't manage even if I bring out the big guns (networkx). Will let it simmer for a little bit...
