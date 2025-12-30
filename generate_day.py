@@ -6,7 +6,7 @@ except ValueError:
     quit()
 
 with open("template.py") as template:
-    with open(f"day{day}.py", 'w') as out:
+    with open(f"day{day}_2025.py", 'w') as out:
         for line in template:
             out.write(line.replace('XX', day).replace('YY', title))
 
